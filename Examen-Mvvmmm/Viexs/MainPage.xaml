@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             x:Class="Examen_Mvvm.Views.MainPage">
+
+	<ContentPage.Content>
+
+		<StackLayout>
+
+			<Label Text="Valor de a:" />
+
+			<Entry Placeholder="Ingrese valor de a" Keyboard="Numeric" x:Name="aEntry" />
+
+			<Label Text="Valor de b:" />
+
+			<Entry Placeholder="Ingrese valor de b" Keyboard="Numeric" x:Name="bEntry" />
+
+			<Label Text="Valor de c:" />
+
+			<Entry Placeholder="Ingrese valor de c" Keyboard="Numeric" x:Name="cEntry" />
+
+			<Button Text="Calcular" Clicked="CalculateButton_Clicked" />
+
+			<Button Text="Limpiar" Clicked="ClearButton_Clicked" />
+
+			<Label Text="Resultado x1:" />
+
+			<Entry IsReadOnly="True" x:Name="x1Entry" />
+
+			<Label Text="Resultado x2:" />
+
+			<Entry IsReadOnly="True" x:Name="x2Entry" />
+
+		</StackLayout>
+
+	</ContentPage.Content>
+
+</ContentPage>
